@@ -11,6 +11,7 @@
 
 - [내부 비지니스 로직을 presenter를 이용하여 외부 비지니스 로직으로 분리하여 코드 개선](https://github.com/godud2604/react-todo-list/commit/bb99454bb4ad3a0bd71f959d1f60b477850c5f0e)
 - [presenter 비지니스 로직 단위 테스트 추가](https://github.com/godud2604/react-todo-list/commit/4ad00628f47526356b808d62a9b457fa45344c85)
+- [AWS 배포](http://mytodolistproject.s3-website.ap-northeast-2.amazonaws.com/)
 
 ---
 
