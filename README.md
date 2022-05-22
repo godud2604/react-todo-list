@@ -10,3 +10,10 @@
 ---
 
 - [내부 비즈니스 로직을 presenter를 이용하여 외부 비즈니스 로직으로 분리하여 코드 개선](https://github.com/godud2604/react-todo-list/commit/bb99454bb4ad3a0bd71f959d1f60b477850c5f0e)
+
+---
+
+## TODO
+- AWS 배포
+- TypeSciprt 로 마이그레이션
+- 유닛 테스트, e2e 테스트, cypress 테스트 적용
