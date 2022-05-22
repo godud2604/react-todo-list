@@ -3,13 +3,14 @@ import HabitPresenter from '../habit_presenter';
 describe('habit', () => {
   let presenter;
   let update;
+  let maxHabits = 3;
   const habits = [
     { id: 1, name: 'Reading', count: 1 },
     { id: 2, name: 'Running', count: 0 },
   ];
 
   beforeEach(() => {
-    presenter = new HabitPresenter(habits);
+    presenter = new HabitPresenter(habits, maxHabits);
     update = jest.fn();
   });
 
@@ -50,6 +51,13 @@ describe('habit', () => {
     expect(presenter.getHabits()[2].name).toBe('Coding');
     expect(presenter.getHabits()[2].count).toBe(0);
     checkUpdateIsCalled();
+  });
+
+  it('throws an error when the max habits limit is exceeded', () => {
+    presenter.add('Coding', update);
+    expect(() => {
+      presenter.add('Coding', update);
+    }).toThrow('습관의 갯수는 3 이상이 될 수 없습니다.')
   });
 
   it('reset all habit counts to 0 and call update callback', () => {
